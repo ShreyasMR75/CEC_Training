@@ -1,5 +1,4 @@
 import React from 'react'
-import Sidebar from './Sidebar'
 
 export default function Layout({ children }){
   return (
@@ -13,12 +12,13 @@ export default function Layout({ children }){
           </div>
         </div>
         <nav className="nav">
-          <a className="active">Home</a>
-          <a>Fields</a>
-          <a>Sensors</a>
-          <a>ML Models</a>
-          <a>Reports</a>
-          <a>Settings</a>
+          <a href="#/" className="active">Home</a>
+          <a href="#/crop">Crop Recommendation</a>
+          <a href="#/fields">Fields</a>
+          <a href="#/sensors">Sensors</a>
+          <a href="#/ml">ML Models</a>
+          <a href="#/reports">Reports</a>
+          <a href="#/settings">Settings</a>
         </nav>
       </aside>
       <main className="main">
